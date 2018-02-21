@@ -46,7 +46,7 @@ export class HTML {
     }
 
     property(name: string): string {
-        return `<span class="meta">${name}</span>`;
+        return `<span id="property-${name}" class="meta">${name}</span>`;
     }
 
     useIdentifier(type: TypeRef, toUrl: string): string {
